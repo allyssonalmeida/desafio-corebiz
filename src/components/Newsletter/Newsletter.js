@@ -7,7 +7,7 @@ const Newsletter = () => {
   const [email, setEmail] = React.useState('');
   const [vNome, setVnome] = React.useState(true);
   const [vEmail, setVemail] = React.useState(true);
-  const [envio, setEnvio] = React.useState(true);
+  const [envio, setEnvio] = React.useState(false);
 
   function validateEmail() {
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(.+))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
