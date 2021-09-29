@@ -28,6 +28,8 @@ const Newsletter = () => {
       let res = await axios.post('https://corebiz-test.herokuapp.com/api/v1/newsletter', lead)
       if(res.status === 200){
         setEnvio(true)
+        setNome('')
+        setEmail('')
       }
     }else{
       setVnome(false)
